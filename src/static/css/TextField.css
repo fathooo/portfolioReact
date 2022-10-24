@@ -1,0 +1,73 @@
+
+.textFielInputContainer {
+  position: relative;
+}
+
+.textFieldInput {
+  height: 48px;
+  width: 280px;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.inputLabel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 16px;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.textFieldInput, .inputLabel .inputText {
+  font-size: var(--h3-font-size);
+}
+
+.textFieldInput:focus {
+  outline: none;
+  border: 2px solid var(--first-color);
+}
+
+.textFieldInput:focus + .inputLabel .inputText {
+  font-size: 12px;
+  transform: translate(0, -50%);
+  background-color: white;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: var(--first-color);
+  transition: all 0.15s ease-out;
+  
+}
+
+.inputText{
+  border-radius: 5px;
+  border-top: 1px 
+  
+}
+
+.textFieldInput:focus + .inputLabel .inputText, :not(input[value=""]) + .inputLabel .inputText {
+  font-size: 12px;
+  transform: translate(0, -150%);
+  background-color: white;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.textFieldInput:focus + .inputLabel .inputText {
+  color: var(--first-color);
+}
+
+
+.validateInputMessage{
+  position: absolute;
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.errorInput {
+  border: 2px solid red;
+}

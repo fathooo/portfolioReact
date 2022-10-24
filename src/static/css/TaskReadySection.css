@@ -1,0 +1,83 @@
+.taskHeader{
+    position: relative;
+    background-color: var(--container-color);
+    padding: 2rem 2rem 2rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    transition: .3s;
+    width: 25rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+.taskHeader:hover{
+    box-shadow: 0 2px 4px rgb(0 0 0 / 70%);
+}
+
+.TaskText{
+    text-align: center;
+}
+
+.iconArrowDown{
+    transform: rotate(180deg);
+    transition: .3s;
+    font-size: 1.5rem;
+ 
+}
+
+
+.iconArrowDownRotate{
+    transform: rotate(360deg);
+    font-size: 1.5rem;
+    transition: .3s;
+}
+
+
+
+
+
+.taskData{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.taskOpen .taskCardsList{
+    height: 0;
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.taskOpen .taskCardsList{
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
+    overflow: hidden;
+    transition: .4s;
+}
+
+.taskClose .taskCardsList .taskData{
+    height: 20rem;
+    transform: translateY(-100rem);
+    transition: .4s;
+}
+
+
+.taskOpen .taskCardsList .taskData{
+    opacity: 1;
+    transition: .4s;
+    transition: .4s;
+}
+
+.taskContent{
+    overflow: hidden;
+}
+
+

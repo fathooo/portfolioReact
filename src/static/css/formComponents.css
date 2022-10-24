@@ -1,0 +1,122 @@
+.element--focus{
+  color:var(--first-color);
+}
+
+.validateInputMessage{
+  color:var(--error-color);
+}
+/*==================== TextFiel ====================*/
+.textFieldInputContainer {
+  position: relative;
+}
+
+
+.textFieldInputText{
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.textFieldInput {
+  height: 48px;
+  width: 280px;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+
+.textFieldInput, .TextFieldInputLabel .textFieldInputText {
+  font-size: var(--h3-font-size);
+}
+
+
+.textFieldInput:focus {
+  outline: none;
+  border: 2px solid var(--first-color);
+}
+
+
+/*==================== TextArea ====================*/
+
+.textAreaInputContainer {
+  position: relative;
+}
+
+
+.textAreaInputText{
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.textAreaFieldInput {
+  height: 160px;
+  width: 280px;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.textAreaFieldInput, .textAreaInputLabel .textAreaInputText {
+  font-size: var(--h3-font-size);
+}
+
+.textAreaFieldInput:focus {
+  outline: none;
+  border: 2px solid var(--first-color);
+}
+
+
+/*==================== DataTimeLocal ====================*/
+
+.dateTimeLocalInputContainer {
+  position: relative;
+}
+
+.dateTimeLocalInputText{
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.dateTimeLocalFieldInput {
+  height: 48px;
+  width: 280px;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.dateTimeLocalFieldInput, .dateTimeLocalInputLabel .dateTimeLocalInputText {
+  font-size: var(--h3-font-size);
+}
+
+.dateTimeLocalFieldInput:focus {
+  outline: none;
+  border: 2px solid var(--first-color);
+}
+
+/*==================== selectField ====================*/
+
+.selectFieldInputContainer {
+  position: relative;
+}
+
+.selectFieldInputText{
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.selectFieldInput {
+  height: 60px;
+  width: 280px;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.selectFieldInput, .selectFieldInputLabel .selectFieldInputText {
+  font-size: var(--h3-font-size);
+}
